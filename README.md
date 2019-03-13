@@ -1,4 +1,4 @@
-# graphql-to-rest-queries README
+# Graphql to Rest queries
 
 Convert GraphQL queries to REST API POST body query so you can using it directly in Postman or other REST clients.
 

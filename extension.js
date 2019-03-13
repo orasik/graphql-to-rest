@@ -17,11 +17,14 @@ function activate(context) {
 		if (vscode.window.activeTextEditor) {
 			let graphqlQuery =  editor.document.getText();
 
+			graphqlQuery = graphqlQuery.replace(/[\s,]+/g, ' ').trim();
+
 			graphqlQuery = graphqlQuery.replace("query ", "query#");
+			graphqlQuery = graphqlQuery.replace("mutation ", "mutation#");
 			graphqlQuery = graphqlQuery.replace(/\"/g, '\\"');
-			graphqlQuery = graphqlQuery.replace(/ /g, '');
 			graphqlQuery = graphqlQuery.replace(/\n/g, '');
 			graphqlQuery = graphqlQuery.replace("query#", "query ");
+			graphqlQuery = graphqlQuery.replace("mutation#", "mutation ");
 			console.log(graphqlQuery);
 			let firstLine = editor.document.lineAt(0);
 			let lastLine = editor.document.lineAt(editor.document.lineCount - 1);

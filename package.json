@@ -2,6 +2,11 @@
 	"name": "graphql-to-rest-queries",
 	"displayName": "GraphQL to REST queries",
 	"description": "Convert GraphQL to REST queries",
+	"publisher": "orasik",
+	"author": {
+		"name": "Oras Al-Kubaisi"
+	},
+	"icon": "images/icon.png",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.3.0"
@@ -31,5 +36,9 @@
 		"eslint": "^5.13.0",
 		"@types/node": "^10.12.21",
 		"@types/mocha": "^2.2.42"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/orasik/graphql-to-rest.git"
 	}
 }

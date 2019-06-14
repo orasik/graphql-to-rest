@@ -25,3 +25,7 @@ Initial release, feedback welcomed
 ### 0.1.0
 
 Initial release of GraphQL to Rest query
+
+### 0.3.0
+
+Updating dependencies
